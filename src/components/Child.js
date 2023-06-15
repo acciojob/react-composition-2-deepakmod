@@ -1,14 +1,13 @@
 import React from 'react';
 
-function Child({show,onClose}){
-
+function Child({key,item,onDelete}){
     return(
-
-        show && <div className='modal-overlay'>
-        <button className='modal-close' onClick={()=>{onClose(false)}}>Close</button>
-        <p className='p'>This is the content of the modal.</p>
+        <div className='child'>
+            <li>{item.name}-${item.price}
+            <button onClick={()=>{onDelete(key)}}>Delete</button>
+            </li>
         </div>
     )
 }
 
-export default Child;
+export default Child
