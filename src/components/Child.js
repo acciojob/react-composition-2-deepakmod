@@ -4,9 +4,9 @@ function Child({show,onClose}){
 
     return(
 
-        show && <div className='modal-overlay'>
+        show && <div className='modal'>
         <button className='modal-close' onClick={()=>{onClose(false)}}>Close</button>
-        <p className='modal-p'>This is the content of the modal.</p>
+        <p className='p'>This is the content of the modal.</p>
         </div>
     )
 }
