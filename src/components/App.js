@@ -1,11 +1,11 @@
 
 import React,{useState} from "react";
 import './../styles/App.css';
-import Parent from "./Parent";
+import Modal from "./Modal";
 const App = () => {
   return (
     <div>
-        <Parent />
+        <Modal />
     </div>
   )
 }
